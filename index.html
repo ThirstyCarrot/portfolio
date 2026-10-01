@@ -78,11 +78,11 @@
             </h1>
 
             <div class="hero-role">
-              <span>Information Systems Student at BYU Marriott</span>
+              <span class="hero-role-badge">Data Analytics &amp; Business Intelligence</span>
             </div>
 
             <p class="hero-description">
-              Focused on data analytics, relational database systems, and practical software development. Welcome to my portfolio.
+              BYU Information Systems student focused on Data Analytics, SQL &amp; Relational Databases, and Business Intelligence. Experienced with PostgreSQL schema design, ETL logic, and building data-driven tools like EternalPlan.
             </p>
 
             <div class="hero-cta-group">
@@ -140,13 +140,13 @@
           <div class="about-card">
             <div>
               <p class="about-text">
-                I am an Information Systems student in the Junior Core at Brigham Young University’s Marriott School of Business.
+                I am an Information Systems student in the Junior Core at Brigham Young University’s Marriott School of Business, specializing in <strong>Data Analytics and Business Intelligence</strong>.
               </p>
               <p class="about-text">
-                My primary interest is in <strong>Data Analytics</strong>. I enjoy taking real-world business problems and using SQL, relational modeling, and code to find clear, actionable answers.
+                I focus on translating operational business questions into structured relational schemas, clean SQL queries (CTEs, joins, aggregations), and intuitive decision models that solve practical problems.
               </p>
               <p class="about-text">
-                I take a hands-on approach to learning—building personal projects, studying how systems operate, and incorporating modern AI development tools into my everyday workflow.
+                My approach is pragmatic and hands-on: architecting relational databases in PostgreSQL, analyzing chronological data flows, and leveraging modern AI engineering tools to accelerate development workflows.
               </p>
             </div>
 
@@ -171,9 +171,9 @@
               </div>
               <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px; font-weight: 600;">Relevant Coursework:</p>
               <div class="course-tags">
-                <span class="course-tag">Relational Database Systems (SQL)</span>
+                <span class="course-tag">Relational Database Systems (SQL &amp; 3NF)</span>
+                <span class="course-tag">Data Analytics &amp; BI Concepts</span>
                 <span class="course-tag">Systems Analysis &amp; Design</span>
-                <span class="course-tag">Data Analytics Concepts</span>
                 <span class="course-tag">Enterprise Application Development</span>
                 <span class="course-tag">Spreadsheet Modeling</span>
               </div>
@@ -191,7 +191,7 @@
                 </div>
               </div>
               <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.6;">
-                Seeking a role where I can write clean SQL queries, help teams understand their data, and learn from experienced engineers and analysts.
+                Targeting opportunities where I can write performant SQL queries, model relational data, analyze business metrics, and learn alongside seasoned analysts and data engineers.
               </p>
             </div>
 
@@ -215,46 +215,153 @@
           <article class="project-card flagship">
             <span class="flagship-badge">Personal Project</span>
             <div class="project-inner">
-              <div class="project-category">Web Application • Personal Finance • AI-Aided Development</div>
-              <h3 class="project-title">EternalPlan — Wedding Budget &amp; Due-Date Savings Planner</h3>
+              <div class="project-category">Relational Data Architecture • Personal Finance • AI-Assisted Engineering</div>
+              <h3 class="project-title">EternalPlan — Event Budget &amp; Cashflow Due-Date Planner</h3>
               <p class="project-summary">
-                A web application built to solve a key challenge in event budgeting: expenses aren't paid in a lump sum, but rather across dozens of specific milestone deadlines (deposits, interim installments, and final balances). EternalPlan models costs chronologically against upcoming paychecks so users know whether they will have sufficient funds on the exact dates payments come due.
+                A web application built to solve a key data modeling problem in event budgeting: expenses are rarely paid in single sums, but rather across dozens of specific milestone deadlines (deposits, installment dates, and final vendor balances). EternalPlan models expenses chronologically against scheduled income dates so users know whether their cash reserves will be solvent on the exact dates payments come due.
               </p>
+
+              <!-- Visual Artifact: Relational ERD & Schema Design -->
+              <div class="schema-artifact-card">
+                <div class="schema-artifact-header">
+                  <div class="schema-artifact-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    <span>Relational Data Architecture (PostgreSQL Schema)</span>
+                  </div>
+                  <span class="schema-rel-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg>
+                    1 : N Relational Model
+                  </span>
+                </div>
+
+                <div class="schema-grid">
+                  <!-- Table 1: budget_categories -->
+                  <div class="schema-table-card">
+                    <div class="schema-table-head">
+                      <span>budget_categories</span>
+                      <span class="schema-type">Table</span>
+                    </div>
+                    <div class="schema-table-body">
+                      <div class="schema-row">
+                        <span><span class="schema-key-pk">PK</span> id</span>
+                        <span class="schema-type">uuid</span>
+                      </div>
+                      <div class="schema-row">
+                        <span><span class="schema-key-fk">FK</span> user_id</span>
+                        <span class="schema-type">uuid</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>category_name</span>
+                        <span class="schema-type">varchar(50)</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>target_allocation</span>
+                        <span class="schema-type">numeric(10,2)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Table 2: payment_milestones -->
+                  <div class="schema-table-card">
+                    <div class="schema-table-head">
+                      <span>payment_milestones</span>
+                      <span class="schema-type">Table</span>
+                    </div>
+                    <div class="schema-table-body">
+                      <div class="schema-row">
+                        <span><span class="schema-key-pk">PK</span> id</span>
+                        <span class="schema-type">uuid</span>
+                      </div>
+                      <div class="schema-row">
+                        <span><span class="schema-key-fk">FK</span> category_id</span>
+                        <span class="schema-type">uuid</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>due_date</span>
+                        <span class="schema-type">date</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>amount_due</span>
+                        <span class="schema-type">numeric(10,2)</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>payment_status</span>
+                        <span class="schema-type">varchar(20)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Table 3: scheduled_incomes -->
+                  <div class="schema-table-card">
+                    <div class="schema-table-head">
+                      <span>scheduled_incomes</span>
+                      <span class="schema-type">Table</span>
+                    </div>
+                    <div class="schema-table-body">
+                      <div class="schema-row">
+                        <span><span class="schema-key-pk">PK</span> id</span>
+                        <span class="schema-type">uuid</span>
+                      </div>
+                      <div class="schema-row">
+                        <span><span class="schema-key-fk">FK</span> user_id</span>
+                        <span class="schema-type">uuid</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>paycheck_date</span>
+                        <span class="schema-type">date</span>
+                      </div>
+                      <div class="schema-row">
+                        <span>expected_amount</span>
+                        <span class="schema-type">numeric(10,2)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="schema-artifact-footer">
+                  <span>📌 <strong>Design Principle:</strong> Normalizes categories and payment obligations to support temporal cashflow queries across bi-weekly pay cycles.</span>
+                  <span>Database: PostgreSQL (Supabase)</span>
+                </div>
+              </div>
 
               <ul class="project-features">
                 <li>
                   <span class="feature-bullet">▸</span>
-                  <span><strong>Due-Date &amp; Paycheck Timeline:</strong> Calculates required savings velocity across bi-weekly paychecks to keep milestones on track.</span>
+                  <span><strong>Relational Data Architecture:</strong> Designed relational schema in PostgreSQL (Supabase) to model one-to-many relationships across budget categories, payment milestones, and scheduled income dates.</span>
                 </li>
                 <li>
                   <span class="feature-bullet">▸</span>
-                  <span><strong>AI Budget Scanner (Gemini API):</strong> Evaluates planned line items to suggest commonly overlooked expenses like service fees, alterations, and setup charges.</span>
+                  <span><strong>Chronological Cashflow Engine:</strong> Solves the event cashflow dilemma by projecting cumulative obligations against scheduled bi-weekly income, identifying deficit dates before contracts are signed.</span>
                 </li>
                 <li>
                   <span class="feature-bullet">▸</span>
-                  <span><strong>Cloud Persistence:</strong> Uses Supabase (PostgreSQL) for user data storage and session synchronization.</span>
+                  <span><strong>AI Budget Scanner (Gemini API):</strong> Evaluates categorized line items to recommend commonly overlooked contingency expenses like service charges, alterations, and setup fees.</span>
                 </li>
                 <li>
                   <span class="feature-bullet">▸</span>
-                  <span><strong>AI-Assisted Workflow:</strong> Built using modern AI development tools to accelerate coding, debugging, and feature iteration.</span>
+                  <span><strong>AI-Assisted Workflow:</strong> Leveraged modern generative AI tools to accelerate schema validation, component architecture, and rapid feature iteration.</span>
                 </li>
               </ul>
 
               <div class="project-tech-stack">
-                <span class="tech-pill emerald">JavaScript (ES6+)</span>
-                <span class="tech-pill">Supabase (PostgreSQL)</span>
+                <span class="tech-pill emerald">PostgreSQL (Supabase)</span>
+                <span class="tech-pill emerald">SQL &amp; Relational Modeling</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
                 <span class="tech-pill">Gemini API</span>
                 <span class="tech-pill">HTML5 / CSS3</span>
               </div>
 
               <div class="project-card-footer">
                 <div class="project-links">
-                  <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                  <a href="https://github.com/ThirstyCarrot/wedding-budget-planner" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>EternalPlan Repo</span>
+                  </a>
+                  <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
                     <span>GitHub Profile</span>
                   </a>
                   <button type="button" class="btn btn-outline-emerald" style="padding: 8px 16px; font-size: 0.85rem;" onclick="openProjectModal('eternalplan')">
-                    <span>Project Notes</span>
+                    <span>Architecture Notes</span>
                   </button>
                 </div>
                 <span style="font-size: 0.8rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">In Active Development</span>
@@ -287,17 +394,18 @@
               </div>
               <div>
                 <h3 class="skill-cat-title">Data &amp; Databases</h3>
-                <span class="skill-cat-sub">Querying &amp; Modeling</span>
+                <span class="skill-cat-sub">SQL, 3NF &amp; Analytics</span>
               </div>
             </div>
 
             <div class="skill-tags-group">
-              <span class="skill-tag featured">SQL (Queries, Joins, Aggregations)</span>
+              <span class="skill-tag featured">SQL (CTEs, Joins, Aggregations, Window Functions)</span>
               <span class="skill-tag featured">Relational Database Design (3NF)</span>
-              <span class="skill-tag">PostgreSQL &amp; Supabase</span>
+              <span class="skill-tag featured">PostgreSQL &amp; Supabase</span>
               <span class="skill-tag">Entity Relationship Diagrams (ERDs)</span>
-              <span class="skill-tag">Excel Data Analysis</span>
-              <span class="skill-tag">Data Cleaning</span>
+              <span class="skill-tag">Data Cleaning &amp; Validation</span>
+              <span class="skill-tag">Business Intelligence Concepts</span>
+              <span class="skill-tag">Excel Spreadsheet Modeling</span>
             </div>
           </div>
 
@@ -308,18 +416,18 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
               </div>
               <div>
-                <h3 class="skill-cat-title">Development</h3>
-                <span class="skill-cat-sub">Code &amp; AI Tools</span>
+                <h3 class="skill-cat-title">Development &amp; Tools</h3>
+                <span class="skill-cat-sub">Code &amp; AI Workflows</span>
               </div>
             </div>
 
             <div class="skill-tags-group">
               <span class="skill-tag featured">JavaScript (ES6+)</span>
               <span class="skill-tag featured">HTML5 &amp; CSS3</span>
-              <span class="skill-tag">Python Basics</span>
+              <span class="skill-tag">Python Basics (Data Scripts)</span>
               <span class="skill-tag">Git &amp; GitHub</span>
               <span class="skill-tag">REST APIs &amp; Gemini API</span>
-              <span class="skill-tag">AI-Assisted Workflows</span>
+              <span class="skill-tag">AI-Assisted Engineering</span>
             </div>
           </div>
 
@@ -331,16 +439,17 @@
               </div>
               <div>
                 <h3 class="skill-cat-title">Methodologies</h3>
-                <span class="skill-cat-sub">Systems &amp; Teamwork</span>
+                <span class="skill-cat-sub">Systems &amp; Problem Solving</span>
               </div>
             </div>
 
             <div class="skill-tags-group">
               <span class="skill-tag featured">Systems Analysis &amp; Design</span>
-              <span class="skill-tag featured">Agile / Scrum Principles</span>
+              <span class="skill-tag featured">Cashflow &amp; Financial Modeling</span>
+              <span class="skill-tag">Agile / Scrum Principles</span>
               <span class="skill-tag">Analytical Problem Solving</span>
-              <span class="skill-tag">Clear Documentation</span>
-              <span class="skill-tag">Team Collaboration</span>
+              <span class="skill-tag">Clear Technical Documentation</span>
+              <span class="skill-tag">Cross-Functional Collaboration</span>
             </div>
           </div>
 
@@ -486,7 +595,7 @@
         <!-- Header -->
         <header class="resume-header">
           <h2 class="resume-name">JACOB IRISH</h2>
-          <div class="resume-tagline">Information Systems Student | BYU Marriott School of Business</div>
+          <div class="resume-tagline">Information Systems Student | Data Analytics &amp; Business Intelligence | BYU Marriott</div>
           <div class="resume-contact-bar">
             <span>📍 Provo, UT</span>
             <span>✉️ <a href="mailto:jirish05@gmail.com" style="color: #38bdf8;">jirish05@gmail.com</a></span>
@@ -505,7 +614,7 @@
             </div>
             <div class="resume-entry-org">Bachelor of Science in Information Systems • Junior IS Core</div>
             <ul class="resume-entry-bullets">
-              <li><strong>Coursework:</strong> Relational Database Systems (SQL), Systems Analysis &amp; Design, Enterprise Application Development, Data Analytics Concepts, Spreadsheet Modeling.</li>
+              <li><strong>Coursework:</strong> Relational Database Systems (SQL &amp; 3NF), Data Analytics &amp; BI Concepts, Systems Analysis &amp; Design, Enterprise Application Development, Spreadsheet Modeling.</li>
             </ul>
           </div>
         </section>
@@ -516,15 +625,15 @@
           
           <div class="resume-entry">
             <div class="resume-entry-header">
-              <span class="resume-entry-title">EternalPlan — Wedding Budget &amp; Due-Date Savings Planner</span>
+              <span class="resume-entry-title">EternalPlan — Event Budget &amp; Cashflow Due-Date Planner</span>
               <span class="resume-entry-date">Active Project</span>
             </div>
-            <div class="resume-entry-org">Personal Project | JavaScript, Supabase (PostgreSQL), Gemini API</div>
+            <div class="resume-entry-org">Personal Project | PostgreSQL (Supabase), JavaScript (ES6+), Gemini API</div>
             <ul class="resume-entry-bullets">
-              <li>Building an application that models event expenses against specific milestone payment due dates and bi-weekly paychecks.</li>
-              <li>Utilizing AI development tools to accelerate prototyping, component structure, and debugging.</li>
-              <li>Integrated Google Gemini API to scan budget items and suggest commonly overlooked vendor costs.</li>
-              <li>Configured Supabase (PostgreSQL) for user data persistence.</li>
+              <li>Designed relational schema in PostgreSQL (Supabase) to model one-to-many relationships across budget categories, payment milestones, and scheduled income dates.</li>
+              <li>Engineered chronological cashflow projection logic to model payment deadlines against bi-weekly income, surfacing cash shortfalls prior to vendor commitment.</li>
+              <li>Integrated Google Gemini API to scan planned budget items and highlight commonly overlooked vendor fees and contingency costs.</li>
+              <li>Implemented full-stack architecture using modern AI-assisted engineering practices for accelerated component design and rapid iteration.</li>
             </ul>
           </div>
         </section>
@@ -533,9 +642,9 @@
         <section class="resume-section">
           <h3 class="resume-section-title">Technical Skills</h3>
           <p style="font-size: 0.9rem; line-height: 1.7; color: #cbd5e1;">
-            <strong>Data &amp; Databases:</strong> SQL (Queries, Joins, Aggregations), Relational Database Design (3NF), PostgreSQL, Supabase, Excel.<br>
-            <strong>Programming &amp; Web:</strong> JavaScript (ES6+), HTML5, CSS3, Python Basics, Git / GitHub.<br>
-            <strong>Methodologies:</strong> Systems Analysis &amp; Design, Agile/Scrum Fundamentals, AI-Assisted Development.
+            <strong>Data &amp; Databases:</strong> SQL (CTEs, Joins, Aggregations, Window Functions), Relational Schema Design (3NF), PostgreSQL, Supabase, Entity Relationship Diagrams (ERDs), Excel Data Modeling.<br>
+            <strong>Programming &amp; Web:</strong> JavaScript (ES6+), HTML5, CSS3, Python Basics (Data Processing), Git &amp; GitHub, REST APIs, Gemini API.<br>
+            <strong>Methodologies:</strong> Systems Analysis &amp; Design, Cashflow &amp; Financial Modeling, Agile/Scrum Principles, AI-Assisted Workflows.
           </p>
         </section>
 
@@ -563,16 +672,21 @@
       <div style="line-height: 1.7; color: #cbd5e1;">
         <h4 style="color: #34d399; font-size: 1.15rem; margin-bottom: 8px;">The Motivation</h4>
         <p style="margin-bottom: 16px;">
-          Standard budgeting spreadsheets only track total projected spend. However, major events like weddings require payments staggered across vendor deposits, mid-contract installments, and final balances. EternalPlan models cashflow against paychecks so couples can see whether they will have enough cash on the actual dates payments are due.
+          Standard budgeting spreadsheets only track total projected spend. However, major events like weddings require payments staggered across vendor deposits, mid-contract installments, and final balances. EternalPlan models cashflow chronologically against upcoming paychecks so couples can see whether they will have sufficient funds on the actual dates payments come due.
         </p>
 
-        <h4 style="color: #34d399; font-size: 1.15rem; margin-bottom: 8px;">Technical Features</h4>
+        <h4 style="color: #34d399; font-size: 1.15rem; margin-bottom: 8px;">Technical Architecture &amp; Data Modeling</h4>
         <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px; padding: 16px; margin: 16px 0;">
           <ul style="padding-left: 20px;">
-            <li><strong>AI-Assisted Workflow:</strong> Built using modern AI tools to accelerate development.</li>
-            <li><strong>Gemini API:</strong> Scans budgets to suggest typical overlooked fees.</li>
-            <li><strong>Supabase Integration:</strong> Handles user data storage with PostgreSQL.</li>
+            <li><strong>Relational Database Design (PostgreSQL / Supabase):</strong> Designed relational schema in PostgreSQL (Supabase) to model one-to-many relationships across budget categories, payment milestones, and scheduled income dates.</li>
+            <li><strong>Chronological Cashflow Engine:</strong> Projects timeline balance across bi-weekly pay cycles to detect deficit risks before contracts are locked in.</li>
+            <li><strong>Gemini API Integration:</strong> Evaluates planned categories with AI prompts to identify hidden expenses like delivery fees, alterations, and taxes.</li>
+            <li><strong>AI-Assisted Workflow:</strong> Leveraged generative AI tooling to rapidly iterate on data structures, component logic, and automated edge-case handling.</li>
           </ul>
+        </div>
+
+        <div style="margin-top: 14px; font-size: 0.85rem; color: var(--text-muted);">
+          <span>Repository: <a href="https://github.com/ThirstyCarrot/wedding-budget-planner" target="_blank" rel="noopener noreferrer" style="color: #38bdf8; text-decoration: underline;">github.com/ThirstyCarrot/wedding-budget-planner</a></span>
         </div>
       </div>
     </div>
