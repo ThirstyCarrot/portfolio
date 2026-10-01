@@ -2,7 +2,6 @@
 
 A clean, honest, and professional website built for **Jacob Irish**, an Information Systems student in the Junior IS Core at the **Brigham Young University Marriott School of Business**.
 
-![Jacob Irish](assets/jacob-irish.jpg)
 
 ---
 
