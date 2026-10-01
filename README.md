@@ -17,7 +17,10 @@ This site is built to be **100% authentic and grounded**—representing where Ja
 
 ---
 
-## 📂 Project Structure
+## 🌐 Live Public Website
+👉 **https://thirstycarrot.github.io/portfolio/**
+
+- **Repository:** https://github.com/ThirstyCarrot/portfolio
 
 ```
 C:\Antigravity\jacob-irish-portfolio\
