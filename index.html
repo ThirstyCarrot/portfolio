@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Irish | Information Systems &amp; Data Analytics | BYU</title>
+  <meta name="description" content="Portfolio of Jacob Irish, Information Systems student at BYU Marriott School of Business seeking Data Analytics internships.">
+  <meta name="author" content="Jacob Irish">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jacob Irish | Information Systems &amp; Data Analytics">
+  <meta property="og:description" content="Information Systems student at BYU Marriott. Explore projects, technical skills, and resume.">
+  <meta property="og:image" content="assets/jacob-irish.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Grid -->
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION
+       ========================================================================== -->
+  <header class="nav-header" id="navHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Jacob Irish - Home">
+        <img src="assets/jacob-irish.jpg" alt="Jacob Irish" class="brand-avatar-mini">
+        <span class="brand-text-name">Jacob Irish</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-outline-emerald" id="btnOpenResumeNav" aria-haspopup="dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Resume</span>
+        </button>
+        <a href="#contact" class="btn btn-primary">Contact</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span>Available for Summer &amp; Fall Internships</span>
+            </div>
+
+            <h1 class="hero-title" id="heroTitle">
+              <span class="gradient-text">Jacob Irish</span>
+            </h1>
+
+            <div class="hero-role">
+              <span>Information Systems Student at BYU Marriott</span>
+            </div>
+
+            <p class="hero-description">
+              Focused on data analytics, relational database systems, and practical software development. Welcome to my portfolio.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button type="button" class="btn btn-secondary" id="btnOpenResumeHero">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>View Resume</span>
+              </button>
+            </div>
+
+            <div class="hero-social-row">
+              <span class="social-link-label">Connect:</span>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/jacobirish4556" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="mailto:jirish05@gmail.com" class="social-icon-btn" aria-label="Email Jacob" title="Email Jacob Irish">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+                <span class="tech-pill emerald" style="margin-left: 8px;">📍 Provo, UT</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="hero-visual">
+            <div class="photo-wrapper">
+              <div class="photo-card">
+                <img src="assets/jacob-irish.jpg" alt="Jacob Irish" class="photo-img" width="380" height="500">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT & EDUCATION
+         ========================================================================== -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title" id="aboutTitle">Background &amp; Education</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div>
+              <p class="about-text">
+                I am an Information Systems student in the Junior Core at Brigham Young University’s Marriott School of Business.
+              </p>
+              <p class="about-text">
+                My primary interest is in <strong>Data Analytics</strong>. I enjoy taking real-world business problems and using SQL, relational modeling, and code to find clear, actionable answers.
+              </p>
+              <p class="about-text">
+                I take a hands-on approach to learning—building personal projects, studying how systems operate, and incorporating modern AI development tools into my everyday workflow.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+              <a href="#projects" class="btn btn-primary">See My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="about-credentials-card" id="education">
+            
+            <div class="credential-item">
+              <div class="credential-header">
+                <div class="credential-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div>
+                  <div class="credential-title">Brigham Young University</div>
+                  <div class="credential-subtitle">Marriott School of Business</div>
+                  <div class="credential-meta">B.S. in Information Systems • Junior IS Core</div>
+                </div>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px; font-weight: 600;">Relevant Coursework:</p>
+              <div class="course-tags">
+                <span class="course-tag">Relational Database Systems (SQL)</span>
+                <span class="course-tag">Systems Analysis &amp; Design</span>
+                <span class="course-tag">Data Analytics Concepts</span>
+                <span class="course-tag">Enterprise Application Development</span>
+                <span class="course-tag">Spreadsheet Modeling</span>
+              </div>
+            </div>
+
+            <div class="credential-item">
+              <div class="credential-header">
+                <div class="credential-icon" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                </div>
+                <div>
+                  <div class="credential-title">Internship Goals</div>
+                  <div class="credential-subtitle">Data Analytics / Business Intelligence</div>
+                  <div class="credential-meta">Available for Summer / Fall Opportunities</div>
+                </div>
+              </div>
+              <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.6;">
+                Seeking a role where I can write clean SQL queries, help teams understand their data, and learn from experienced engineers and analysts.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECT: ETERNALPLAN
+         ========================================================================== -->
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title" id="projectsTitle">Project Spotlight</h2>
+        </div>
+
+        <div class="projects-grid" style="grid-template-columns: 1fr;">
+
+          <article class="project-card flagship">
+            <span class="flagship-badge">Personal Project</span>
+            <div class="project-inner">
+              <div class="project-category">Web Application • Personal Finance • AI-Aided Development</div>
+              <h3 class="project-title">EternalPlan — Wedding Budget &amp; Due-Date Savings Planner</h3>
+              <p class="project-summary">
+                A web application built to solve a key challenge in event budgeting: expenses aren't paid in a lump sum, but rather across dozens of specific milestone deadlines (deposits, interim installments, and final balances). EternalPlan models costs chronologically against upcoming paychecks so users know whether they will have sufficient funds on the exact dates payments come due.
+              </p>
+
+              <ul class="project-features">
+                <li>
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Due-Date &amp; Paycheck Timeline:</strong> Calculates required savings velocity across bi-weekly paychecks to keep milestones on track.</span>
+                </li>
+                <li>
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>AI Budget Scanner (Gemini API):</strong> Evaluates planned line items to suggest commonly overlooked expenses like service fees, alterations, and setup charges.</span>
+                </li>
+                <li>
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>Cloud Persistence:</strong> Uses Supabase (PostgreSQL) for user data storage and session synchronization.</span>
+                </li>
+                <li>
+                  <span class="feature-bullet">▸</span>
+                  <span><strong>AI-Assisted Workflow:</strong> Built using modern AI development tools to accelerate coding, debugging, and feature iteration.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill emerald">JavaScript (ES6+)</span>
+                <span class="tech-pill">Supabase (PostgreSQL)</span>
+                <span class="tech-pill">Gemini API</span>
+                <span class="tech-pill">HTML5 / CSS3</span>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-links">
+                  <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub Profile</span>
+                  </a>
+                  <button type="button" class="btn btn-outline-emerald" style="padding: 8px 16px; font-size: 0.85rem;" onclick="openProjectModal('eternalplan')">
+                    <span>Project Notes</span>
+                  </button>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">In Active Development</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & TOOLKIT
+         ========================================================================== -->
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Toolkit</span>
+          <h2 class="section-title" id="skillsTitle">Skills &amp; Technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Data & Databases -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Data &amp; Databases</h3>
+                <span class="skill-cat-sub">Querying &amp; Modeling</span>
+              </div>
+            </div>
+
+            <div class="skill-tags-group">
+              <span class="skill-tag featured">SQL (Queries, Joins, Aggregations)</span>
+              <span class="skill-tag featured">Relational Database Design (3NF)</span>
+              <span class="skill-tag">PostgreSQL &amp; Supabase</span>
+              <span class="skill-tag">Entity Relationship Diagrams (ERDs)</span>
+              <span class="skill-tag">Excel Data Analysis</span>
+              <span class="skill-tag">Data Cleaning</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming & Web -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon cyan">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Development</h3>
+                <span class="skill-cat-sub">Code &amp; AI Tools</span>
+              </div>
+            </div>
+
+            <div class="skill-tags-group">
+              <span class="skill-tag featured">JavaScript (ES6+)</span>
+              <span class="skill-tag featured">HTML5 &amp; CSS3</span>
+              <span class="skill-tag">Python Basics</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">REST APIs &amp; Gemini API</span>
+              <span class="skill-tag">AI-Assisted Workflows</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Systems & Business -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon indigo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Methodologies</h3>
+                <span class="skill-cat-sub">Systems &amp; Teamwork</span>
+              </div>
+            </div>
+
+            <div class="skill-tags-group">
+              <span class="skill-tag featured">Systems Analysis &amp; Design</span>
+              <span class="skill-tag featured">Agile / Scrum Principles</span>
+              <span class="skill-tag">Analytical Problem Solving</span>
+              <span class="skill-tag">Clear Documentation</span>
+              <span class="skill-tag">Team Collaboration</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        
+        <div class="contact-box">
+          <div class="contact-info-col">
+            <span class="contact-tag">Get in Touch</span>
+            <h2 class="contact-h2" id="contactTitle">Contact Me</h2>
+            <p class="contact-desc">
+              Whether you'd like to talk about an internship opportunity, discuss database systems, or check out my code, feel free to reach out.
+            </p>
+
+            <div class="contact-quick-links">
+              
+              <!-- Email Item with Copy -->
+              <div class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">Email</span>
+                  <a href="mailto:jirish05@gmail.com" class="contact-link-val">jirish05@gmail.com</a>
+                </div>
+                <button type="button" class="copy-btn-inline" id="copyEmailBtn" aria-label="Copy email address to clipboard">Copy</button>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <a href="https://www.linkedin.com/in/jacobirish4556" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon" style="background: rgba(6, 182, 212, 0.12); color: var(--accent-cyan);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-val">linkedin.com/in/jacobirish4556</span>
+                </div>
+              </a>
+
+              <!-- GitHub Item -->
+              <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon" style="background: rgba(99, 102, 241, 0.12); color: var(--accent-indigo);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-val">github.com/ThirstyCarrot</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Direct Message Form -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="Subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="btnSubmitForm" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            <div id="formStatus" style="font-size: 0.85rem; text-align: center; display: none;"></div>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-logo">
+          <img src="assets/jacob-irish.jpg" alt="Jacob Irish" class="brand-avatar-mini">
+          <span class="brand-text-name">Jacob Irish</span>
+        </div>
+
+        <div style="display: flex; gap: 20px; align-items: center;">
+          <a href="#hero" class="nav-link">Top</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear">2026</span> Jacob Irish.
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.8rem;">
+          Brigham Young University • Provo, UT
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       AUTHENTIC RESUME MODAL (<dialog>)
+       ========================================================================== -->
+  <dialog class="modal-dialog" id="resumeModal" aria-labelledby="resumeModalTitle">
+    <div class="modal-header">
+      <h3 class="modal-title" id="resumeModalTitle">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        <span>Jacob Irish — Resume</span>
+      </h3>
+      <button type="button" class="modal-close-btn" id="btnCloseResume" aria-label="Close resume modal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="resume-doc">
+        
+        <!-- Header -->
+        <header class="resume-header">
+          <h2 class="resume-name">JACOB IRISH</h2>
+          <div class="resume-tagline">Information Systems Student | BYU Marriott School of Business</div>
+          <div class="resume-contact-bar">
+            <span>📍 Provo, UT</span>
+            <span>✉️ <a href="mailto:jirish05@gmail.com" style="color: #38bdf8;">jirish05@gmail.com</a></span>
+            <span>🔗 <a href="https://www.linkedin.com/in/jacobirish4556" target="_blank" rel="noopener noreferrer" style="color: #38bdf8;">linkedin.com/in/jacobirish4556</a></span>
+            <span>💻 <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" style="color: #38bdf8;">github.com/ThirstyCarrot</a></span>
+          </div>
+        </header>
+
+        <!-- Education -->
+        <section class="resume-section">
+          <h3 class="resume-section-title">Education</h3>
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span class="resume-entry-title">BRIGHAM YOUNG UNIVERSITY — Marriott School of Business</span>
+              <span class="resume-entry-date">Provo, UT</span>
+            </div>
+            <div class="resume-entry-org">Bachelor of Science in Information Systems • Junior IS Core</div>
+            <ul class="resume-entry-bullets">
+              <li><strong>Coursework:</strong> Relational Database Systems (SQL), Systems Analysis &amp; Design, Enterprise Application Development, Data Analytics Concepts, Spreadsheet Modeling.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="resume-section">
+          <h3 class="resume-section-title">Projects</h3>
+          
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span class="resume-entry-title">EternalPlan — Wedding Budget &amp; Due-Date Savings Planner</span>
+              <span class="resume-entry-date">Active Project</span>
+            </div>
+            <div class="resume-entry-org">Personal Project | JavaScript, Supabase (PostgreSQL), Gemini API</div>
+            <ul class="resume-entry-bullets">
+              <li>Building an application that models event expenses against specific milestone payment due dates and bi-weekly paychecks.</li>
+              <li>Utilizing AI development tools to accelerate prototyping, component structure, and debugging.</li>
+              <li>Integrated Google Gemini API to scan budget items and suggest commonly overlooked vendor costs.</li>
+              <li>Configured Supabase (PostgreSQL) for user data persistence.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="resume-section">
+          <h3 class="resume-section-title">Technical Skills</h3>
+          <p style="font-size: 0.9rem; line-height: 1.7; color: #cbd5e1;">
+            <strong>Data &amp; Databases:</strong> SQL (Queries, Joins, Aggregations), Relational Database Design (3NF), PostgreSQL, Supabase, Excel.<br>
+            <strong>Programming &amp; Web:</strong> JavaScript (ES6+), HTML5, CSS3, Python Basics, Git / GitHub.<br>
+            <strong>Methodologies:</strong> Systems Analysis &amp; Design, Agile/Scrum Fundamentals, AI-Assisted Development.
+          </p>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        <span>Print / Save PDF</span>
+      </button>
+      <button type="button" class="btn btn-primary" id="btnCloseResumeFooter">Close</button>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       ETERNALPLAN PROJECT NOTES MODAL (<dialog>)
+       ========================================================================== -->
+  <dialog class="modal-dialog" id="projectModal" aria-labelledby="projectModalTitle">
+    <div class="modal-header">
+      <h3 class="modal-title" id="projectModalTitle">EternalPlan Overview</h3>
+      <button type="button" class="modal-close-btn" id="btnCloseProjectModal" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body" id="projectModalBody">
+      <div style="line-height: 1.7; color: #cbd5e1;">
+        <h4 style="color: #34d399; font-size: 1.15rem; margin-bottom: 8px;">The Motivation</h4>
+        <p style="margin-bottom: 16px;">
+          Standard budgeting spreadsheets only track total projected spend. However, major events like weddings require payments staggered across vendor deposits, mid-contract installments, and final balances. EternalPlan models cashflow against paychecks so couples can see whether they will have enough cash on the actual dates payments are due.
+        </p>
+
+        <h4 style="color: #34d399; font-size: 1.15rem; margin-bottom: 8px;">Technical Features</h4>
+        <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px; padding: 16px; margin: 16px 0;">
+          <ul style="padding-left: 20px;">
+            <li><strong>AI-Assisted Workflow:</strong> Built using modern AI tools to accelerate development.</li>
+            <li><strong>Gemini API:</strong> Scans budgets to suggest typical overlooked fees.</li>
+            <li><strong>Supabase Integration:</strong> Handles user data storage with PostgreSQL.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" id="btnCloseProjectFooter">Close</button>
+    </div>
+  </dialog>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
