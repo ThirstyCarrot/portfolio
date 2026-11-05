@@ -102,7 +102,7 @@ Please evaluate:
               <div class="social-links">
                 <a href="https://www.linkedin.com/in/jacobirish4556" target="_blank" rel="noopener noreferrer" class="social-icon-btn">LinkedIn</a>
                 <a href="https://github.com/ThirstyCarrot" target="_blank" rel="noopener noreferrer" class="social-icon-btn">GitHub</a>
-                <a href="mailto:jirish05@gmail.com" class="social-icon-btn">Email</a>
+                <a href="mailto:business@jacob.irish" class="social-icon-btn">Email</a>
                 <span class="tech-pill emerald">📍 Provo, UT</span>
               </div>
             </div>
@@ -272,7 +272,7 @@ Please evaluate:
               Whether you'd like to talk about an internship opportunity, discuss database systems, or check out my code, feel free to reach out.
             </p>
             <div class="contact-quick-links">
-              <div>Email: jirish05@gmail.com</div>
+              <div>Email: business@jacob.irish</div>
               <div>LinkedIn: linkedin.com/in/jacobirish4556</div>
               <div>GitHub: github.com/ThirstyCarrot</div>
             </div>

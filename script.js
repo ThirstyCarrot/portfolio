@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText('jirish05@gmail.com');
+        await navigator.clipboard.writeText('business@jacob.irish');
         const originalText = copyEmailBtn.textContent;
         copyEmailBtn.textContent = 'Copied! ✓';
         copyEmailBtn.style.color = '#34d399';
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
           copyEmailBtn.style.borderColor = '';
         }, 2500);
       } catch (err) {
-        window.location.href = 'mailto:jirish05@gmail.com';
+        window.location.href = 'mailto:business@jacob.irish';
       }
     });
   }
@@ -148,12 +148,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('contactMessage')?.value || '';
 
       const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
-      const mailtoUrl = `mailto:jirish05@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      const mailtoUrl = `mailto:business@jacob.irish?subject=${encodeURIComponent(subject)}&body=${body}`;
 
       if (formStatus) {
         formStatus.style.display = 'block';
         formStatus.style.color = '#34d399';
-        formStatus.innerHTML = `Opening your email client to send to <strong>jirish05@gmail.com</strong>...`;
+        formStatus.innerHTML = `Opening your email client to send to <strong>business@jacob.irish</strong>...`;
       }
 
       window.location.href = mailtoUrl;
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         contactForm.reset();
         if (formStatus) {
-          formStatus.innerHTML = `Message prepared! You can also reach out directly at <a href="mailto:jirish05@gmail.com" style="color: #38bdf8; text-decoration: underline;">jirish05@gmail.com</a>.`;
+          formStatus.innerHTML = `Message prepared! You can also reach out directly at <a href="mailto:business@jacob.irish" style="color: #38bdf8; text-decoration: underline;">business@jacob.irish</a>.`;
         }
       }, 1500);
     });

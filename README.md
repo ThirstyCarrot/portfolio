@@ -12,12 +12,12 @@ This site is built to be **100% authentic and grounded**—representing where Ja
 - **Current Status:** Junior Information Systems (IS) Core at BYU Marriott School of Business
 - **Focus:** Data Analytics & Business Intelligence
 - **Featured Project:** **EternalPlan** — a personal project aided by modern AI development to solve due-date wedding savings and cashflow planning
-- **Contact:** `jirish05@gmail.com` | [LinkedIn](https://www.linkedin.com/in/jacobirish4556) | [GitHub](https://github.com/ThirstyCarrot)
+- **Contact:** `business@jacob.irish` | [LinkedIn](https://www.linkedin.com/in/jacobirish4556) | [GitHub](https://github.com/ThirstyCarrot)
 
 ---
 
 ## 🌐 Live Public Website
-👉 **https://thirstycarrot.github.io/portfolio/**
+👉 **https://jacob.irish** (also accessible at https://thirstycarrot.github.io/portfolio/)
 
 - **Repository:** https://github.com/ThirstyCarrot/portfolio
 
